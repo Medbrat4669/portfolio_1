@@ -175,6 +175,11 @@ img {
     display: flex;
     margin-right: 49px;
 }
+
+.number__flex-item:last-child {
+    margin-right: 0;
+}
+
 .number__icon {
     margin-right: 20px;
     
@@ -186,3 +191,51 @@ img {
     color: #fff;
 }
 
+/* skills */
+
+.skills {
+    padding-top: 120px;
+    padding-bottom: 101px;
+}
+.skills__flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill__box {
+    max-width: 445px;
+    padding-top: 83px;
+}
+.skills__list {
+    margin-bottom: 28px;
+}
+
+.skills_h2 {
+    color: #000;
+    margin-bottom: 40px;
+}
+
+.skills_p {
+    margin-bottom: 12px;
+}
+.progress-bar {
+    display: flex;
+}
+
+
+.progress-bar-completed {
+    width: 350px;
+    height: 4px;
+    background-color: var(--blue-color);
+}
+.progress-bar-remaining {
+    width: 95px;
+    height: 4px;
+    background-color: #C4C4C4;
+}
+
+.skills_photo {
+    max-width: 555px;
+    max-height: 450px;
+    margin-top: -20px;
+}
