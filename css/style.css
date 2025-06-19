@@ -1,0 +1,188 @@
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+    margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+:root {
+    --blue-color: #34547A;
+    --gray-color: #727272;
+}
+
+.text-p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+}
+.text-h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px;
+}
+
+.text-h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 25px;
+    color: white;
+}
+
+.container {
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: #EEEFF1;
+    padding-bottom: 146px;
+}
+.header__menu-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 49px;
+}
+
+.header__menu-flex ul {
+    list-style: none;
+}
+
+.logo {
+    font-family: "Revalia", sans-serif;
+    font-weight: 400;
+    font-size: 48px;
+    color: var(--blue-color);
+    padding-left: 15px;
+}
+.header_menu-items {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-left: 10px;
+}
+
+.header__menu-item {
+    margin-right: 42px;
+}
+
+.header_menu-items li:last-child {
+    margin-right: 29px;
+}
+
+.header__content-flex {
+    display: flex;
+    justify-content: center;
+    margin-top: 140px;
+
+}
+
+.header__img {
+    width: 357px;
+    height: 234px;
+    margin-right: 130px;
+    margin-top: 25px;
+    margin-left: 80px;
+}
+
+.header__content {
+    
+}
+
+.header__content h1 {
+    font-size: 48px;
+    font-family: "Roboto", sans-serif;
+}
+
+.header__content p {
+    margin-top: 45px;
+    color: #727272;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    line-height: 161%;
+    max-width: 540px;
+}
+
+.header__button {
+    margin-top: 55px;
+    width: 225px;
+    height: 65px;
+    background-color: var(--blue-color);
+    color: white;
+    border: none;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+/* обо мне */
+.about-me {
+    padding-top: 119px;
+    padding-bottom: 93px;
+}
+.about-me__content {
+    max-width: 540px;
+    margin: 0 auto;
+}
+.about-me_h2 {
+    color: #000;
+    text-align: center;
+    margin-bottom: 38px;
+}
+.about-me_p {
+    text-align: center;
+    color: var(--gray-color);
+}
+
+/* numbers */
+.numbers {
+    background-color: var(--blue-color);
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.numbers__flex {
+    display: flex;
+    justify-content: left;
+    padding-left: 20px;
+
+}
+.number__flex-item {
+    display: flex;
+    margin-right: 49px;
+}
+.number__icon {
+    margin-right: 20px;
+    
+}
+.numbers__flex-item-inner {
+}
+
+.numbers_h3 {
+    color: #fff;
+}
+
