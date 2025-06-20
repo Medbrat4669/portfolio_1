@@ -101,8 +101,8 @@ img {
 }
 
 .header__img {
-    width: 357px;
-    height: 234px;
+    max-width: 357px;
+    max-height: 234px;
     margin-right: 130px;
     margin-top: 25px;
     margin-left: 80px;
@@ -140,6 +140,39 @@ img {
     letter-spacing: 0.1em;
 }
 
+@media screen and (max-width: 1280px) {
+  .header__menu-flex{
+    flex-direction: column;
+  }
+
+  .header__content-flex {
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .header__img {
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+  }
+
+  .header__content h1 {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+    .header_menu-items {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
+
+}
+
 /* обо мне */
 .about-me {
     padding-top: 119px;
@@ -158,6 +191,14 @@ img {
     text-align: center;
     color: var(--gray-color);
 }
+
+@media screen and (max-width: 1280px) {
+    .about-me {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
 
 /* numbers */
 .numbers {
@@ -189,6 +230,25 @@ img {
 
 .numbers_h3 {
     color: #fff;
+}
+
+@media screen and (max-width: 1280px) {
+    .numbers__flex {
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .number__flex-item {
+        margin: 0;
+    } 
+}
+
+@media screen and (max-width: 768px) {
+
+
 }
 
 /* skills */
@@ -238,4 +298,70 @@ img {
     max-width: 555px;
     max-height: 450px;
     margin-top: -20px;
+}
+
+@media screen and (max-width: 1280px) {
+    .progress-bar-completed {
+        width: 100%;
+    }
+
+    .progress-bar-remaining {
+        width: 78%;
+    }
+
+    .skills {
+        padding-top: 0px;
+        padding-bottom: 50px;
+    }
+
+    .skill__box {
+        padding: 0;
+    }
+
+    .skills__flex {
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .skills_photo {
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        padding-left: 20px;
+        padding-right: 20px;
+
+}
+
+}
+
+@media screen and (max-width: 768px) {
+
+
+}
+
+/* video */
+
+.video {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.video__content {
+    text-align: center;
+}
+.video__title {
+    max-width: 540px;
+    margin: 0 auto;
+}
+.video_h2 {
+}
+.video_p {
+    margin-top: 39px;
+    color: var(--gray-color);
+}
+.video-frame {
+    margin-top: 50px;
 }
