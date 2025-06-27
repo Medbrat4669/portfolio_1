@@ -55,7 +55,7 @@ img {
 
 .header {
     background-color: var(--silver-color);
-    padding-bottom: 146px;
+    padding-bottom: 165px;
 }
 .header__menu-flex {
     display: flex;
@@ -72,9 +72,21 @@ img {
     font-family: "Revalia", sans-serif;
     font-weight: 400;
     font-size: 48px;
-    color: var(--blue-color);
     padding-left: 15px;
+    text-decoration: none;
 }
+
+.logo a {
+    text-decoration: none;
+    color: var(--blue-color);
+    display: inline-block;
+    transition: transform 1s ease-in-out;
+}
+
+.logo a:hover {
+    transform: rotate(360deg);
+}
+
 .header_menu-items {
     display: flex;
     justify-content: space-between;
@@ -88,6 +100,15 @@ img {
 
 .header__menu-item {
     margin-right: 42px;
+}
+
+.header__menu-item a {
+    color: #000;
+    text-decoration: none;
+}
+
+.header__menu-item a:hover {
+    color: var(--blue-color);
 }
 
 .header_menu-items li:last-child {
@@ -125,10 +146,10 @@ img {
     font-family: "Roboto", sans-serif;
     line-height: 161%;
     max-width: 540px;
+    margin-bottom: 80px;
 }
 
 .header__button {
-    margin-top: 55px;
     width: 225px;
     height: 65px;
     background-color: var(--blue-color);
@@ -139,6 +160,8 @@ img {
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 0.1em;
+    padding: 25px 41px;
+    text-decoration: none;
 }
 
 @media screen and (max-width: 1280px) {
@@ -448,7 +471,7 @@ img {
 /* Клиенты */
 .clients {
     margin-top: 70px;
-    margin-bottom: 100px;
+    margin-bottom: 113px;
 }
 .clients__flex {
     display: flex;
@@ -468,7 +491,7 @@ img {
 /* Форма обратной связи */
 .form {
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 90px;
     background-color: var(--silver-color);
 }
 .form__content {
@@ -501,7 +524,7 @@ img {
     padding-left: 20px;
     border: none;
 }
-.form_area {
+.form__area {
     padding-left: 20px;
     padding-top: 17px;
     margin-top: 20px;
@@ -509,7 +532,7 @@ img {
     border: none;
 }
 
-.form_btn {
+.form__btn {
     margin-top: 50px;
     width: 190px;
     height: 50px;
@@ -519,8 +542,26 @@ img {
     text-transform: uppercase;
     color: #fff;
     text-align: center;
+    cursor: pointer;
 }
 
+
+@media screen and (max-width: 768px) {
+    .form__content-items-flex{
+        align-items: center;
+        flex-direction: column;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .form__content-item {
+        max-width: 255px;
+    }
+
+    .form__area {
+        max-width: 255px;
+    }
+}
 
 
 /* footer */
@@ -549,8 +590,21 @@ img {
 
 .footer__btn {
     padding-right: 10px;
-    font-size: 40px;;
+    font-size: 40px;
+    color: #fff;
 }
 
 
+@media screen and (max-width: 768px) {
+    .footer__items-flex {
+        flex-wrap: wrap;
+        margin: 0 auto;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    .footer__btn {
+        justify-content: center;
+    }
+}
 
